@@ -26,10 +26,7 @@
   "crons": [
     {
       "path": "/api/cron/reminders",
-      "schedule": "0 8 * * *",
-      "headers": {
-        "x-cron-auth": "${CRON_SECRET}"
-      }
+      "schedule": "0 8 * * *"
     }
   ]
 }

@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 const authRoutes = require('./routes/authRoutes');
 const policyRoutes = require('./routes/policyRoutes');
 const reminderRoutes = require('./routes/reminderRoutes');
-const startCronJobs = require('./cron/reminderCron');
+const { startCronJobs } = require('./cron/reminderCron');
 
 // Start the cron scheduling
 startCronJobs();
